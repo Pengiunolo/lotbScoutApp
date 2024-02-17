@@ -4,6 +4,7 @@ import { StyleSheet, Text, View, ScrollView, StatusBar } from 'react-native';
 export default function App() {
   return (
     <View style={styles.main}>
+      <ScrollView style={styles.scroll} contentContainerStyle={{flexGrow: 1}}>
         
         <View style={styles.head}>
           <Text>test</Text>
@@ -16,7 +17,7 @@ export default function App() {
           <Text>End Game</Text>
           <View style={styles.container}></View>
         </View>
-      
+      </ScrollView>
     </View>
   );
 }
@@ -48,7 +49,7 @@ const styles = StyleSheet.create({
     paddingTop: StatusBar.currentHeight,
   },
   scroll:{
-    flex:1,
+    // flex:1,
     // flexGrow: 0,
   }
 
