@@ -1,20 +1,22 @@
 
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, StatusBar } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.main}>
-      <View style={styles.head}>
-        <Text>test</Text>
-      </View>
-      <View style={styles.body}>      
-        <Text>Autonomus</Text>
-        <View style={styles.container}></View>
-        <Text>Teleop</Text>
-        <View style={styles.container}></View>
-        <Text>End Game</Text>
-        <View style={styles.container}></View>
-      </View>
+        
+        <View style={styles.head}>
+          <Text>test</Text>
+        </View>
+        <View style={styles.body}>      
+          <Text>Autonomous</Text>
+          <View style={styles.container}></View>
+          <Text>Teleop</Text>
+          <View style={styles.container}></View>
+          <Text>End Game</Text>
+          <View style={styles.container}></View>
+        </View>
+      
     </View>
   );
 }
@@ -42,7 +44,12 @@ const styles = StyleSheet.create({
   },
   main:{
     flex:1,
-    alignItems: 'center',
+    // alignItems: 'center',
+    paddingTop: StatusBar.currentHeight,
+  },
+  scroll:{
+    flex:1,
+    // flexGrow: 0,
   }
 
   
