@@ -11,11 +11,12 @@ export default function App() {
         </View>
         <View style={styles.body}>      
           <Text>Autonomous</Text>
-          <View style={styles.container}></View>
+          <View style={styles.AutoContainer}></View>
           <Text>Teleop</Text>
-          <View style={styles.container}></View>
+          <View style={styles.TeleOpContainer}></View>
           <Text>End Game</Text>
-          <View style={styles.container}></View>
+          <View style={styles.EgContainer}></View>
+          <View style={styles.Spacer}></View>
         </View>
       </ScrollView>
     </View>
@@ -23,19 +24,47 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
+  AutoContainer: {
+    flex: .65,
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#666',
-    width: '80%',
-    alignSelf: 'center'
+    width: '95%',
+    alignSelf: 'center',
+    borderRadius: 20,
   },
+  TeleOpContainer: {
+    flex: .65,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#ff1900',
+    width: '95%', 
+    alignSelf: 'center',
+    borderRadius: 20,
+  },
+  EgContainer: {
+    flex: .5,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#0008ff',
+    width: '95%',
+    alignSelf: 'center',
+    borderRadius: 20,
+  },
+Spacer: {
+flex: .5,
+alignItems: 'center',
+justifyContent: 'center',
+width: '100%',
+alignSelf: 'center'
+},
+
   head:{
-    flex: 2,
+    flex: .5,
+    alignItems:'center',
     backgroundColor: '#00ff',
     justifyContent: 'flex-start',
-    width: '100%'
+    width: '100%',
   },
   body:{
     flex: 20,
