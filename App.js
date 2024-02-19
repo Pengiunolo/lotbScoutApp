@@ -17,9 +17,12 @@ export default function App() {
           <Text>End Game</Text>
           <View style={styles.EgContainer}></View>
           <View style={styles.Spacer}></View>
+          
+          <Text style={styles.submit} > submit </Text>
+          
         </View>
       </ScrollView>
-    </View>
+      </View>
   );
 }
 
@@ -51,6 +54,15 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     borderRadius: 20,
   },
+submit:{
+flex: .25,
+alignItems: 'center',
+justifyContent: 'center',
+backgroundColor:'#fa0202',
+width: '50%',
+alignSelf: 'center',
+borderRadius:20,
+},
 Spacer: {
 flex: .5,
 alignItems: 'center',
@@ -80,7 +92,7 @@ alignSelf: 'center'
   scroll:{
     // flex:1,
     // flexGrow: 0,
-  }
+  },
 
   
 });
