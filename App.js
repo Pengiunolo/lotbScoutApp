@@ -41,7 +41,7 @@ export default function App() {
 // color palatte can be found at https://colors.muz.li/palette/272643/ffffff/e3f6f5/bae8e8/2c698d
 const styles = StyleSheet.create({
   AutoContainer: {
-    marginTop: '2%',
+    margin: '2%',
     flex: .65,
     alignItems: 'center',
     justifyContent: 'center',
@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
     borderRadius: 20,
   },
   TeleOpContainer: {
-    marginTop: '2%',
+    margin: '2%',
     flex: .65,
     alignItems: 'center',
     justifyContent: 'center',
@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
     borderRadius: 20,
   },
   EgContainer: {
-    marginTop: '2%',
+    margin: '2%',
     flex: .5,
     alignItems: 'center',
     justifyContent: 'center',
