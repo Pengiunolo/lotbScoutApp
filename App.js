@@ -1,4 +1,4 @@
-
+import Icon from 'react-native-vector-icons/Ionicons';
 import { StyleSheet, Text, View, ScrollView, StatusBar, Pressable } from 'react-native';
 
 export default function App() {
@@ -7,6 +7,7 @@ export default function App() {
       <ScrollView style={styles.scroll} contentContainerStyle={{flexGrow: 1}}>
         
         <View style={styles.head}>
+          <Icon name="menu" size={30} color= "#fff"></Icon>
           <Text>test</Text>
         </View>
         <View style={styles.body}>      
@@ -28,7 +29,7 @@ export default function App() {
               styles.submit,
             ]}>
             {({pressed}) => (
-              <Text style={styles.text}>{pressed ? 'Pressed!' : 'Press Me'}</Text>
+              <Text style={styles.text}>{pressed ? 'Submit' : 'Submitted'}</Text>
             )}
           </Pressable>
         </View>
