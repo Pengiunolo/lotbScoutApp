@@ -1,5 +1,5 @@
 
-import { StyleSheet, Text, View, ScrollView, StatusBar } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, StatusBar, Pressable } from 'react-native';
 
 export default function App() {
   return (
@@ -16,73 +16,95 @@ export default function App() {
           <View style={styles.TeleOpContainer}></View>
           <Text>End Game</Text>
           <View style={styles.EgContainer}></View>
-          <View style={styles.Spacer}></View>
           
-          <Text style={styles.submit} > submit </Text>
-          
+          <Pressable
+            onPress={() => {
+              
+            }}
+            style={({pressed}) => [
+              {
+                backgroundColor: pressed ? '#bae8e8' : '#2c698d',
+              },
+              styles.submit,
+            ]}>
+            {({pressed}) => (
+              <Text style={styles.text}>{pressed ? 'Pressed!' : 'Press Me'}</Text>
+            )}
+          </Pressable>
         </View>
       </ScrollView>
       </View>
   );
 }
 
+
+// color palatte can be found at https://colors.muz.li/palette/272643/ffffff/e3f6f5/bae8e8/2c698d
 const styles = StyleSheet.create({
   AutoContainer: {
+    marginTop: '2%',
     flex: .65,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#666',
+    backgroundColor: '#e3f6f5',
     width: '95%',
     alignSelf: 'center',
     borderRadius: 20,
   },
   TeleOpContainer: {
+    marginTop: '2%',
     flex: .65,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#ff1900',
+    backgroundColor: '#e3f6f5',
     width: '95%', 
     alignSelf: 'center',
     borderRadius: 20,
   },
   EgContainer: {
+    marginTop: '2%',
     flex: .5,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#0008ff',
+    backgroundColor: '#e3f6f5',
     width: '95%',
     alignSelf: 'center',
     borderRadius: 20,
   },
-submit:{
-flex: .25,
-alignItems: 'center',
-justifyContent: 'center',
-backgroundColor:'#fa0202',
-width: '50%',
-alignSelf: 'center',
-borderRadius:20,
-},
-Spacer: {
-flex: .5,
-alignItems: 'center',
-justifyContent: 'center',
-width: '100%',
-alignSelf: 'center'
-},
+  submit:{
+    
+    alignItems: 'center',
+    justifyContent: 'center', 
+    alignSelf: 'flex-end',
+    borderRadius:20,
+    marginRight: '7%',
+    marginBottom: '2%',
+    marginTop: 10,
+    // bottom: '5%',
+    padding: 12,
+    // position: 'absolute',
+    
+  },
+  Spacer: {
+    flex: .5,
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: '100%',
+    alignSelf: 'center'
+  },
 
   head:{
-    flex: .5,
-    alignItems:'center',
-    backgroundColor: '#00ff',
-    justifyContent: 'flex-start',
+    flex: 1.5,
+    alignItems:'flex-start',
+    backgroundColor: '#272643',
+    justifyContent: 'center',
     width: '100%',
   },
   body:{
     flex: 20,
     width: '100%',
     justifyContent: 'center',
-    alignItems: 'flex-start'
+    alignItems: 'flex-start',
+    padding: 10
   },
   main:{
     flex:1,
