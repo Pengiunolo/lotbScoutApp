@@ -29,7 +29,7 @@ export default function App() {
               styles.submit,
             ]}>
             {({pressed}) => (
-              <Text style={styles.text}>{pressed ? 'Submit' : 'Submitted'}</Text>
+              <Text style={styles.text}>{pressed ? 'Submited' : 'Submit'}</Text>
             )}
           </Pressable>
         </View>
@@ -85,20 +85,14 @@ const styles = StyleSheet.create({
     // position: 'absolute',
     
   },
-  Spacer: {
-    flex: .5,
-    alignItems: 'center',
-    justifyContent: 'center',
-    width: '100%',
-    alignSelf: 'center'
-  },
-
   head:{
     flex: 1.5,
     alignItems:'flex-start',
     backgroundColor: '#272643',
-    justifyContent: 'center',
+    justifyContent: 'space-between',
     width: '100%',
+    padding: 10,
+    flexDirection: 'row',
   },
   body:{
     flex: 20,
