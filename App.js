@@ -7,8 +7,9 @@ export default function App() {
       <ScrollView style={styles.scroll} contentContainerStyle={{flexGrow: 1}}>
         
         <View style={styles.head}>
-          <Icon name="menu" size={30} color= "#fff"></Icon>
-          <Text>test</Text>
+          
+          <Icon name="menu" size={30} color= "#000000"></Icon>
+        
         </View>
         <View style={styles.body}>      
           <Text>Autonomous</Text>
@@ -24,7 +25,7 @@ export default function App() {
             }}
             style={({pressed}) => [
               {
-                backgroundColor: pressed ? '#bae8e8' : '#2c698d',
+                backgroundColor: pressed ? '#fc8b72' : '#F24822',
               },
               styles.submit,
             ]}>
@@ -46,7 +47,7 @@ const styles = StyleSheet.create({
     flex: .65,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#e3f6f5',
+    backgroundColor: '#757575',
     width: '95%',
     alignSelf: 'center',
     borderRadius: 20,
@@ -56,7 +57,7 @@ const styles = StyleSheet.create({
     flex: .65,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#e3f6f5',
+    backgroundColor: '#757575',
     width: '95%', 
     alignSelf: 'center',
     borderRadius: 20,
@@ -66,7 +67,7 @@ const styles = StyleSheet.create({
     flex: .5,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#e3f6f5',
+    backgroundColor: '#757575',
     width: '95%',
     alignSelf: 'center',
     borderRadius: 20,
@@ -86,9 +87,9 @@ const styles = StyleSheet.create({
     
   },
   head:{
-    flex: 1.5,
+    flex: .05,
     alignItems:'flex-start',
-    backgroundColor: '#272643',
+    backgroundColor: '#757575',
     justifyContent: 'space-between',
     width: '100%',
     padding: 10,
@@ -99,17 +100,20 @@ const styles = StyleSheet.create({
     width: '100%',
     justifyContent: 'center',
     alignItems: 'flex-start',
-    padding: 10
+    padding: 10,
+  
   },
   main:{
     flex:1,
     // alignItems: 'center',
     paddingTop: StatusBar.currentHeight,
+    
   },
   scroll:{
     // flex:1,
     // flexGrow: 0,
   },
+  
 
   
 });
