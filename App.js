@@ -7,8 +7,10 @@ export default function App() {
       <ScrollView style={styles.scroll} contentContainerStyle={{flexGrow: 1}}>
         
         <View style={styles.head}>
+          <Pressable>
+            <Icon name="menu" size={30} color= "#000000"></Icon>
+          </Pressable>
           
-          <Icon name="menu" size={30} color= "#000000"></Icon>
         
         </View>
         <View style={styles.body}>      
