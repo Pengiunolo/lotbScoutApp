@@ -12,10 +12,17 @@ export default function App() {
         
         </View>
         <View style={styles.body}>      
-          <Text>Autonomous</Text>
-          <View style={styles.AutoContainer}></View>
+        {/* Autonomous code group */}
+          <Text>Autonomous</Text> 
+          <View style={styles.AutoContainer}>
+            <Text style={styles.textStyle}> Scored pixels on backdrop</Text>
+          </View>
+         
+          {/* TeleOp code group */}
           <Text>Teleop</Text>
           <View style={styles.TeleOpContainer}></View>
+          
+          {/* EG code group */}
           <Text>End Game</Text>
           <View style={styles.EgContainer}></View>
           
@@ -52,6 +59,13 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     borderRadius: 20,
   },
+
+textStyle: {
+fontSize:'20',
+color:'black',
+fontWeight:'normal',
+textAlign:'left',
+},
   TeleOpContainer: {
     margin: '2%',
     flex: .65,
@@ -87,7 +101,7 @@ const styles = StyleSheet.create({
     
   },
   head:{
-    flex: .05,
+    flex: .3,
     alignItems:'flex-start',
     backgroundColor: '#757575',
     justifyContent: 'space-between',
