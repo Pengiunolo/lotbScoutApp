@@ -7,24 +7,49 @@ export default function App() {
       <ScrollView style={styles.scroll} contentContainerStyle={{flexGrow: 1}}>
         
         <View style={styles.head}>
+          <Pressable
+          onPress={() => {
+              
+            
+
+            }}>
+            
+            <Icon name="menu" size={30} color= "#000000"></Icon>
           
-          <Icon name="menu" size={30} color= "#000000"></Icon>
+          </Pressable>
+          
         
         </View>
         <View style={styles.body}>      
         {/* Autonomous code group */}
           <Text>Autonomous</Text> 
           <View style={styles.AutoContainer}>
-            <Text style={styles.textStyle}> Scored pixels on backdrop</Text>
+            <Text style={styles.textStyle}> Sample 1</Text>
+            <Text style={styles.textStyle}> Sample 2</Text>
+            <Text style={styles.textStyle}> Sample 3</Text>
+            <Text style={styles.textStyle}> Sample 4</Text>
+            <Text style={styles.textStyle}> Sample 5</Text>
           </View>
          
           {/* TeleOp code group */}
           <Text>Teleop</Text>
-          <View style={styles.TeleOpContainer}></View>
+          <View style={styles.TeleOpContainer}>
+          <Text style={styles.textStyle}> Sample 1</Text>
+            <Text style={styles.textStyle}> Sample 2</Text>
+            <Text style={styles.textStyle}> Sample 3</Text>
+            <Text style={styles.textStyle}> Sample 4</Text>
+            <Text style={styles.textStyle}> Sample 5</Text>
+          </View>
           
           {/* EG code group */}
           <Text>End Game</Text>
-          <View style={styles.EgContainer}></View>
+          <View style={styles.EgContainer}>
+          <Text style={styles.textStyle}> Sample 1</Text>
+            <Text style={styles.textStyle}> Sample 2</Text>
+            <Text style={styles.textStyle}> Sample 3</Text>
+            <Text style={styles.textStyle}> Sample 4</Text>
+            <Text style={styles.textStyle}> Sample 5</Text>
+          </View>
           
           <Pressable
             onPress={() => {
