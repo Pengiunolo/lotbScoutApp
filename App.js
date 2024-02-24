@@ -87,13 +87,14 @@ const styles = StyleSheet.create({
     
   },
   head:{
-    flex: .05,
-    alignItems:'flex-start',
+    flex: 1,
+    flexDirection: 'row',
+    alignItems:'center',
     backgroundColor: '#757575',
     justifyContent: 'space-between',
     width: '100%',
     padding: 10,
-    flexDirection: 'row',
+    
   },
   body:{
     flex: 20,
