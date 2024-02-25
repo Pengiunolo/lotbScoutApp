@@ -24,11 +24,17 @@ export default function App() {
         {/* Autonomous code group */}
           <Text>Autonomous</Text> 
           <View style={styles.AutoContainer}>
-            <Text style={styles.textStyle}> Sample 1</Text>
-            <Text style={styles.textStyle}> Sample 2</Text>
-            <Text style={styles.textStyle}> Sample 3</Text>
-            <Text style={styles.textStyle}> Sample 4</Text>
-            <Text style={styles.textStyle}> Sample 5</Text>
+            <View>
+              <Text style={styles.textStyle}> Sample 4</Text>
+              <Text style={styles.textStyle}> Sample 5</Text>
+            </View>
+            <View> 
+              <Text style={styles.textStyle}> Sample 3</Text>
+              <Text style={styles.textStyle}> Sample 4</Text>
+              <Text style={styles.textStyle}> Sample 5</Text>
+            </View>
+           
+            
           </View>
          
           {/* TeleOp code group */}
@@ -84,10 +90,11 @@ export default function App() {
 // color palatte can be found at https://colors.muz.li/palette/fc8b72/f24822/519ae3/cbe5ff/5f88cc
 const styles = StyleSheet.create({
   AutoContainer: {
+    flexDirection: 'row',
     margin: '2%',
     flex: .65,
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'space-around',
     backgroundColor: '#757575',
     width: '95%',
     alignSelf: 'center',
