@@ -14,6 +14,7 @@ export default function App() {
 
             }}>
             
+            
             <Icon name="menu" size={30} color= "#000000"></Icon>
           
           </Pressable>
@@ -23,39 +24,55 @@ export default function App() {
         <View style={styles.body}>      
         {/* Autonomous code group */}
           <Text>Autonomous</Text> 
-          <View style={styles.AutoContainer}>
+          
+            <View style={styles.AutoContainer}>
+            
             <View>
-              <Text style={styles.textStyle}> Sample 4</Text>
-              <Text style={styles.textStyle}> Sample 5</Text>
+              <Text style={styles.textStyle}> Sample 1</Text>
+              <Text style={styles.textStyle}> Sample 2</Text>
+              <Text style={styles.textStyle}> Sample 3</Text>
             </View>
             <View> 
-              <Text style={styles.textStyle}> Sample 3</Text>
               <Text style={styles.textStyle}> Sample 4</Text>
               <Text style={styles.textStyle}> Sample 5</Text>
+              <Text style={styles.textStyle}> Sample 6</Text>
             </View>
            
             
           </View>
+          
+          
          
           {/* TeleOp code group */}
           <Text>Teleop</Text>
           <View style={styles.TeleOpContainer}>
-          <Text style={styles.textStyle}> Sample 1</Text>
-            <Text style={styles.textStyle}> Sample 2</Text>
-            <Text style={styles.textStyle}> Sample 3</Text>
-            <Text style={styles.textStyle}> Sample 4</Text>
-            <Text style={styles.textStyle}> Sample 5</Text>
+          <View>
+              <Text style={styles.textStyle}> Sample 1</Text>
+              <Text style={styles.textStyle}> Sample 2</Text>
+              <Text style={styles.textStyle}> Sample 3</Text>
+            </View>
+            <View> 
+              <Text style={styles.textStyle}> Sample 4</Text>
+              <Text style={styles.textStyle}> Sample 5</Text>
+              <Text style={styles.textStyle}> Sample 6</Text>
+            </View>
           </View>
           
           {/* EG code group */}
           <Text>End Game</Text>
           <View style={styles.EgContainer}>
-          <Text style={styles.textStyle}> Sample 1</Text>
-            <Text style={styles.textStyle}> Sample 2</Text>
-            <Text style={styles.textStyle}> Sample 3</Text>
-            <Text style={styles.textStyle}> Sample 4</Text>
-            <Text style={styles.textStyle}> Sample 5</Text>
+          <View>
+              <Text style={styles.textStyle}> Sample 1</Text>
+              <Text style={styles.textStyle}> Sample 2</Text>
+              <Text style={styles.textStyle}> Sample 3</Text>
+            </View>
+            <View> 
+              <Text style={styles.textStyle}> Sample 4</Text>
+              <Text style={styles.textStyle}> Sample 5</Text>
+              <Text style={styles.textStyle}> Sample 6</Text>
+            </View>
           </View>
+          
           
           <Pressable
             onPress={() => {
@@ -107,20 +124,22 @@ const styles = StyleSheet.create({
     textAlign:'left',
   },
   TeleOpContainer: {
+    flexDirection:'row',
     margin: '2%',
     flex: .65,
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'space-around',
     backgroundColor: '#757575',
     width: '95%', 
     alignSelf: 'center',
     borderRadius: 20,
   },
   EgContainer: {
+    flexDirection: 'row',
     margin: '2%',
     flex: .5,
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'space-around',
     backgroundColor: '#757575',
     width: '95%',
     alignSelf: 'center',
