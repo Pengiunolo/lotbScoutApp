@@ -10,17 +10,13 @@ export default function App() {
           <Pressable
           onPress={() => {
               
-            
+             
 
             }}>
             
             
             <Icon name="menu" size={30} color= "#000000"></Icon>
           
-          </Pressable>
-          
-          <Pressable>
-            <Icon name="menu" size={30} color= "#000000"></Icon>
           </Pressable>
           
         
