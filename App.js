@@ -23,19 +23,19 @@ export default function App() {
         </View>
         <View style={styles.body}>      
         {/* Autonomous code group */}
-          <Text>Autonomous</Text> 
+          <Text style={styles.textStyle}> Autonomous</Text> 
           
             <View style={styles.AutoContainer}>
             
             <View>
-              <Text style={styles.textStyle}> Sample 1</Text>
-              <Text style={styles.textStyle}> Sample 2</Text>
-              <Text style={styles.textStyle}> Sample 3</Text>
+              <Text style={styles.textStyle2}> Sample 1</Text>
+              <Text style={styles.textStyle2}> Sample 2</Text>
+              <Text style={styles.textStyle2}> Sample 3</Text>
             </View>
             <View> 
-              <Text style={styles.textStyle}> Sample 4</Text>
-              <Text style={styles.textStyle}> Sample 5</Text>
-              <Text style={styles.textStyle}> Sample 6</Text>
+              <Text style={styles.textStyle2}> Sample 4</Text>
+              <Text style={styles.textStyle2}> Sample 5</Text>
+              <Text style={styles.textStyle2}> Sample 6</Text>
             </View>
            
             
@@ -44,32 +44,32 @@ export default function App() {
           
          
           {/* TeleOp code group */}
-          <Text>Teleop</Text>
+          <Text style={styles.textStyle}>Teleop</Text>
           <View style={styles.TeleOpContainer}>
           <View>
-              <Text style={styles.textStyle}> Sample 1</Text>
-              <Text style={styles.textStyle}> Sample 2</Text>
-              <Text style={styles.textStyle}> Sample 3</Text>
+              <Text style={styles.textStyle2}> Sample 1</Text>
+              <Text style={styles.textStyle2}> Sample 2</Text>
+              <Text style={styles.textStyle2}> Sample 3</Text>
             </View>
             <View> 
-              <Text style={styles.textStyle}> Sample 4</Text>
-              <Text style={styles.textStyle}> Sample 5</Text>
-              <Text style={styles.textStyle}> Sample 6</Text>
+              <Text style={styles.textStyle2}> Sample 4</Text>
+              <Text style={styles.textStyle2}> Sample 5</Text>
+              <Text style={styles.textStyle2}> Sample 6</Text>
             </View>
           </View>
           
           {/* EG code group */}
-          <Text>End Game</Text>
+          <Text style={styles.textStyle}> End Game</Text>
           <View style={styles.EgContainer}>
           <View>
-              <Text style={styles.textStyle}> Sample 1</Text>
-              <Text style={styles.textStyle}> Sample 2</Text>
-              <Text style={styles.textStyle}> Sample 3</Text>
+              <Text style={styles.textStyle2}> Sample 1</Text>
+              <Text style={styles.textStyle2}> Sample 2</Text>
+              <Text style={styles.textStyle2}> Sample 3</Text>
             </View>
             <View> 
-              <Text style={styles.textStyle}> Sample 4</Text>
-              <Text style={styles.textStyle}> Sample 5</Text>
-              <Text style={styles.textStyle}> Sample 6</Text>
+              <Text style={styles.textStyle2}> Sample 4</Text>
+              <Text style={styles.textStyle2}> Sample 5</Text>
+              <Text style={styles.textStyle2}> Sample 6</Text>
             </View>
           </View>
           
@@ -112,7 +112,7 @@ const styles = StyleSheet.create({
     flex: .65,
     alignItems: 'center',
     justifyContent: 'space-around',
-    backgroundColor: '#757575',
+    backgroundColor: '#5F88CC',
     width: '95%',
     alignSelf: 'center',
     borderRadius: 20,
@@ -120,16 +120,23 @@ const styles = StyleSheet.create({
   textStyle: {
     fontSize: 20,
     color:'black',
-    fontWeight:'normal',
+    fontWeight:'bold',
     textAlign:'left',
   },
+  textStyle2: {
+    fontSize: 20,
+    color:'black',
+    fontWeight:'500',
+    textAlign:'left',
+  },
+
   TeleOpContainer: {
     flexDirection:'row',
     margin: '2%',
     flex: .65,
     alignItems: 'center',
     justifyContent: 'space-around',
-    backgroundColor: '#757575',
+    backgroundColor: '#5F88CC',
     width: '95%', 
     alignSelf: 'center',
     borderRadius: 20,
@@ -140,7 +147,7 @@ const styles = StyleSheet.create({
     flex: .5,
     alignItems: 'center',
     justifyContent: 'space-around',
-    backgroundColor: '#757575',
+    backgroundColor: '#5F88CC',
     width: '95%',
     alignSelf: 'center',
     borderRadius: 20,
@@ -163,7 +170,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     alignItems:'center',
-    backgroundColor: '#757575',
+    backgroundColor: '#CBE5FF',
     justifyContent: 'space-between',
     width: '100%',
     padding: 10,
