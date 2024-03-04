@@ -27,16 +27,27 @@ export default function App() {
           
             <View style={styles.AutoContainer}>
             
+            {/*row 1*/}
             <View>
               <Text style={styles.textStyle2}> Sample 1</Text>
               <Text style={styles.textStyle2}> Sample 2</Text>
               <Text style={styles.textStyle2}> Sample 3</Text>
             </View>
+            
+            {/*row 2*/}
             <View> 
               <Text style={styles.textStyle2}> Sample 4</Text>
               <Text style={styles.textStyle2}> Sample 5</Text>
               <Text style={styles.textStyle2}> Sample 6</Text>
             </View>
+            
+            {/*row 3*/}
+            <View> 
+              <Text style={styles.textStyle2}> Sample 7</Text>
+              <Text style={styles.textStyle2}> Sample 8</Text>
+              <Text style={styles.textStyle2}> Sample 9</Text>
+            </View>
+            
            
             
           </View>
@@ -46,30 +57,52 @@ export default function App() {
           {/* TeleOp code group */}
           <Text style={styles.textStyle}>Teleop</Text>
           <View style={styles.TeleOpContainer}>
+          
+          {/*row 1*/}
           <View>
               <Text style={styles.textStyle2}> Sample 1</Text>
               <Text style={styles.textStyle2}> Sample 2</Text>
               <Text style={styles.textStyle2}> Sample 3</Text>
             </View>
+            
+            {/*row 2*/}
             <View> 
               <Text style={styles.textStyle2}> Sample 4</Text>
               <Text style={styles.textStyle2}> Sample 5</Text>
               <Text style={styles.textStyle2}> Sample 6</Text>
+            </View>
+           
+           {/*row 3*/}
+            <View> 
+              <Text style={styles.textStyle2}> Sample 7</Text>
+              <Text style={styles.textStyle2}> Sample 8</Text>
+              <Text style={styles.textStyle2}> Sample 9</Text>
             </View>
           </View>
           
           {/* EG code group */}
           <Text style={styles.textStyle}> End Game</Text>
           <View style={styles.EgContainer}>
+          
+          {/*row 1*/}
           <View>
               <Text style={styles.textStyle2}> Sample 1</Text>
               <Text style={styles.textStyle2}> Sample 2</Text>
               <Text style={styles.textStyle2}> Sample 3</Text>
             </View>
+            
+            {/*row 2*/}
             <View> 
               <Text style={styles.textStyle2}> Sample 4</Text>
               <Text style={styles.textStyle2}> Sample 5</Text>
               <Text style={styles.textStyle2}> Sample 6</Text>
+            </View>
+            
+            {/*row 3*/}
+            <View> 
+              <Text style={styles.textStyle2}> Sample 7</Text>
+              <Text style={styles.textStyle2}> Sample 8</Text>
+              <Text style={styles.textStyle2}> Sample 9</Text>
             </View>
           </View>
           
