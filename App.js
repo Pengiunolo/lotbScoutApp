@@ -1,6 +1,7 @@
 import Icon from 'react-native-vector-icons/Ionicons';
 import { StyleSheet, Text, View, ScrollView, StatusBar, Pressable } from 'react-native';
 
+
 export default function App() {
   return (
     <View style={styles.main}>
@@ -29,16 +30,20 @@ export default function App() {
             
             {/*row 1*/}
             <View>
+            <Text style={styles.textStyle2}> Header</Text>
+            <Text style={styles.textStyle2}> </Text>
               <Text style={styles.textStyle2}> Sample 1</Text>
               <Text style={styles.textStyle2}> Sample 2</Text>
               <Text style={styles.textStyle2}> Sample 3</Text>
             </View>
             
+            
             {/*row 2*/}
             <View> 
-              <Text style={styles.textStyle2}> Sample 4</Text>
-              <Text style={styles.textStyle2}> Sample 5</Text>
-              <Text style={styles.textStyle2}> Sample 6</Text>
+              <Text style={styles.textStyle2}> Header</Text>
+              <Text style={styles.textStyle2}> </Text>
+              <Text style={styles.textStyle2}> </Text>
+              <Text style={styles.textStyle2}> </Text>
             </View>
             
             {/*row 3*/}
@@ -162,7 +167,7 @@ const styles = StyleSheet.create({
     fontWeight:'500',
     textAlign:'left',
   },
-
+  
   TeleOpContainer: {
     flexDirection:'row',
     margin: '2%',
@@ -227,6 +232,7 @@ const styles = StyleSheet.create({
     // flex:1,
     // flexGrow: 0,
   },
+  
   
 
   
